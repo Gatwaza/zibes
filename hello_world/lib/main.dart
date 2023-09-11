@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
           title: Text('Hello World App'),
         ),
         body: Center(
-          child: Text('Hello, World!'),
+          child: Text('Hello, le peuple!'),
         ),
       ),
     );
