@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
                 child: Container(
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('assets/image.png'), // Replace with the actual path
+                      image: AssetImage('lib/assets/image.png'), // Replace with the actual path
                       fit: BoxFit.cover,
                     ),
                     borderRadius: BorderRadius.circular(2),
