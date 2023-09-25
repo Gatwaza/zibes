@@ -36,6 +36,7 @@ dependencies:
 
 assets:
   - lib/assets/image.png
+  - assets/sign_in.png
 
 
   # The following adds the Cupertino Icons font to your application.

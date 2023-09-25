@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'sign_in_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -83,17 +84,37 @@ class MyApp extends StatelessWidget {
                 left: 39,
                 right: 45,
                 height: 61,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Color(0xFF055C03),
-                    borderRadius: BorderRadius.circular(15),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.5),
-                        blurRadius: 4,
-                        offset: Offset(0, 4),
+                child: GestureDetector(  // Wrap with GestureDetector
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SignInPage()),
+                    );
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xFF055C03),
+                      borderRadius: BorderRadius.circular(15),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.5),
+                          blurRadius: 4,
+                          offset: Offset(0, 4),
+                        ),
+                      ],
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Register",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontFamily: 'Inter',
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30,
+                          color: Colors.white,
+                        ),
                       ),
-                    ],
+                    ),
                   ),
                 ),
               ),
@@ -136,4 +157,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
